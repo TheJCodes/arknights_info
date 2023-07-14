@@ -1,0 +1,547 @@
+.body_color_blk {
+    background-color: black;
+}
+
+.font_family_nav {
+    font-family: "Grenze Gotisch", sans-serif;
+    font-size: 2rem;
+}
+
+h1 {
+    font-family: "Grenze Gotisch", sans-serif;
+    font-size: 4em;
+    color: white;
+    z-index: 101;
+}
+
+@media (min-width: 770px) {
+    h2 {
+        font-family: "Grenze Gotisch", sans-serif;
+        font-size: 3em;
+        color: white;
+        z-index: 101;
+    }
+}
+
+@media (max-width: 769px) {
+    h2 {
+        font-family: "Grenze Gotisch", sans-serif;
+        font-size: 3em;
+        color: white;
+        z-index: 101;
+        text-align: center;
+    }
+}
+
+h3 {
+    font-family: "Grenze Gotisch", sans-serif;
+    font-size: 2.5em;
+    color: white;
+    z-index: 101;
+}
+
+h4 {
+    font-family: "Grenze Gotisch", sans-serif;
+    font-size: 2em;
+    color: white;
+    z-index: 101;
+}
+
+h5 {
+    font-family: "Grenze Gotisch", sans-serif;
+    font-size: 1.5em;
+    color: white;
+    z-index: 101;
+}
+
+h6 {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: white;
+    z-index: 101;
+}
+
+p {
+    font-family: "Grenze Gotisch", sans-serif;
+    font-size: 1.5em;
+    color: white;
+    z-index: 101;
+    background: linear-gradient(180deg, #111e23, rgba(15, 26, 30, 0));
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.65);
+    padding: 0.5em;
+}
+
+p::first-letter {
+    font-weight: bold;
+}
+
+@media (min-width: 770px) {
+    div > p {
+        text-align: left;
+    }
+}
+
+@media (max-width: 769px) {
+    div > p {
+        text-align: center;
+    }
+}
+
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+i {
+    color: white;
+    text-align: center;
+}
+
+button {
+    z-index: 101;
+    border: none;
+    appearance: none;
+    background-color: inherit;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+/* styles to append on top of pre-existing stuff */
+.z_index_adj {
+    z-index: 106;
+}
+
+.image_dim {
+    filter: brightness(90%);
+}
+
+.image_dim_more {
+    filter: brightness(70%);
+}
+
+.image_dim_most {
+    filter: brightness(50%);
+}
+
+.align_top {
+    align-self: flex-start;
+}
+
+.align_mid {
+    align-self: center;
+}
+
+.align_bot {
+    align-self: flex-end;
+}
+
+.box_drop_shadow {
+    box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.png_drop_shadow {
+    -webkit-filter:
+    drop-shadow(5px 5px 5px #222222);
+    filter:
+    drop-shadow(5px 5px 5px #222222);
+  }
+
+.png_white_outline {
+    -webkit-filter:
+    drop-shadow(1px 1px 0 #9f9f9f)
+    drop-shadow(-1px -1px 0 #9f9f9f)
+    drop-shadow(1px -1px 0 #9f9f9f)
+    drop-shadow(-1px 1px 0 #9f9f9f);
+    filter:
+    drop-shadow(1px 1px 0 #9f9f9f)
+    drop-shadow(-1px -1px 0 #9f9f9f)
+    drop-shadow(1px -1px 0 #9f9f9f)
+    drop-shadow(-1px 1px 0 #9f9f9f);
+}
+
+.outline_portrait {
+    outline-style: inset;
+    outline-color: white;
+}
+
+.text_align_mid {
+    text-align: center;
+}
+
+.text_drop_shadow {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.overflow_hide {
+    overflow: hidden;
+}
+
+@media (min-width: 770px){
+    .fb_half {
+        width: 50%;
+    }
+}
+
+@media (max-width: 769px){
+    .fb_half {
+        width: 100%;
+    }
+}
+
+.reverse_row {
+    flex-direction: row-reverse;
+}
+
+.padding {
+    padding: 0.75rem;
+}
+
+.gap {
+    gap: 2rem;
+}
+
+@media (min-width: 411px){
+    .image_padding {
+        padding: 0.75rem;
+    }
+}
+
+@media (max-width: 410px){
+    .image_padding {
+        padding: 0;
+    }
+}
+
+/* actual css stuff */
+.flexbox_container {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    flex-wrap: wrap;
+    min-height: 500px;
+}
+
+/* first flexbox that sorta worked for wallpaper container */
+/* .flexbox_item_section_wallpaper {
+    position: absolute;
+    z-index: 100;
+    flex-direction: column;
+    display: flex;
+} */
+
+/* attempt at making scaling responsive USE THIS */
+.fb_banner_container {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    flex-wrap: wrap;
+    min-height: 100px;
+}
+
+.flexbox_banner_container {
+    position: absolute;
+    display: flex;
+    width: 100%;
+}
+
+.flexbox_wallpaper_container {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.wallpaper {
+    object-fit: cover;
+    object-position: center;
+    z-index: 100;
+    width: 100%;
+    height: inherit;
+}
+
+.wallpaper_overlap {
+    object-fit: contain;
+    object-position: center;
+    z-index: 107;
+    width: 100%;
+    height: inherit;
+}
+
+.overlay {
+    opacity: 0.6;
+}
+
+.overlay_light {
+    opacity: 0.8;
+}
+
+.overlay_banner {
+    opacity: 0.3;
+}
+
+.flexbox_container_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-height: 2000px;
+    padding: 0.75rem;
+}
+
+.flexbox_item_ak_logo {
+    display: flex;
+}
+
+.ak_logo {
+    width: 350px;
+    z-index: 105;
+    margin-top: 20px;
+}
+
+.fb_main_container_trailer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.fb_container_trailer {
+    display: flex;
+    flex-direction: column;
+}
+
+.trailer_container {
+    display: flex;
+    width: 100%;
+}
+
+.trailer_thumbnail {
+    z-index: 104;
+    width: 350px;
+}
+
+.trailer_text {
+    text-align: center;
+    z-index: 104;
+}
+
+.fb_container_app_store_buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.anchor_containers, .basic_flex {
+    display: flex;
+}
+
+.app_store_buttons {
+    object-fit: contain;
+    z-index: 106;
+    width: 200px;
+    height: 60px;
+}
+
+.fb_section_container {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    flex-wrap: wrap;
+    min-height: 500px;
+}
+
+.flexbox_container_inner_half_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-height: 1000px;
+}
+
+.flexbox_container_inner_half_section_empty {
+    display: flex;
+    width: 40%;
+    height: 200px;
+}
+
+.flexbox_container_inner_row_nogap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 1000px;
+    padding: 0.75rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flexbox_container_inner_row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 2000px;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+/* backup of previous inner row
+.flexbox_container_inner_row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 1000px;
+    padding: 0.75rem;
+    flex-wrap: wrap;
+    gap: 1.5em;
+} */
+
+@media(min-width: 536px) {
+    .image_container_flex {
+        display: flex;
+        width: 500px;
+        height: 100%;
+    }
+}
+
+@media(max-width: 535px) {
+    .image_container_flex {
+        display: flex;
+        width: 300px;
+        height: 100%;
+    }
+}
+
+
+.image_container {
+    display: flex;
+    width: 300px;
+}
+
+.image {
+    z-index: 106;
+    width: 100%;
+    height: 100%;
+}
+
+.cropped_image_container {
+    display: flex;
+    height: 300px;
+    /* things added after image test */
+    width: 100%;
+
+}
+
+.cropped_image {
+    object-fit: cover;
+    object-position: bottom;
+    width: 350px;
+    z-index: 106;
+}
+
+@media (min-width: 1101px){
+    .boilerplate_container {
+        display: flex;
+        width: 50vw;
+    }
+}
+
+@media (max-width: 1100px){
+    .boilerplate_container {
+        display: flex;
+        width: 90vw;
+    }
+}
+
+.flex_list {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80vw;
+    padding-inline-start: 0px;
+}
+
+.flexbox_container_footer {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    flex-wrap: wrap;
+    min-height: 250px;
+}
+
+.btn-close-white {
+    color: #fff;
+    opacity: 1;
+}
+
+.modal-content {
+    background-color: transparent;
+    border-radius: 0px;
+    border: 0px;
+}
+
+.modal-header {
+    border-bottom: 0px;
+}
+
+.youtube_embed {
+    object-fit: contain;
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .youtube_flex_container {
+        display: flex;
+        height: 450px;
+        width: auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .youtube_flex_container {
+        display: flex;
+        height: 270px;
+        width: 480px;
+    }
+}
+
+@media (max-width: 441px) {
+    .youtube_flex_container {
+        display: flex;
+        height: 189px;
+        width: 336px;
+    }
+}
+
+#scroll_to_top_button {
+    visibility: hidden;
+}
+
+.scroll_to_top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    z-index: 150;
+}
